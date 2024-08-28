@@ -1,0 +1,342 @@
+/* --------------------------------------------------initialization-------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    position: "relative";
+    font-family:"DM Sans";
+        
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+img{
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+
+/*------------------------------------------------ google fonts ----------------------------------------------*/
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 1000 */
+
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.delius-unicase-regular {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .delius-unicase-bold {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+/*------------------------------------------------ navigation bar --------------------------------------------*/
+
+.navbar{
+    background-color: #6f6af7;
+    display:flex;
+    width: 100%;
+    height: 4.30em;
+    position: fixed;
+    z-index: 1000;
+    /* justify-content: space-between; */
+}
+
+.navbar_contents{
+    display: flex;
+    list-style-type: none;
+    padding: 0.8em;
+    gap: 4em;
+    font-weight: 500;
+    font-size: larger;
+}
+
+li:nth-child(n+2):nth-child(-n+5){
+    padding-top:0.5em;
+}
+
+.c_name{
+    font-family: "Delius Unicase";
+    font-size:xx-large;
+    padding:0 1em;
+}
+
+.search{
+    background-image: url("Images/search.png");
+    z-index: 1;
+    background-position:15em 0.6em;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    height: 2.5em;
+    width: 18em;
+    padding:0em 1em;
+    border-radius: 20px;
+}
+
+.stack_icon{
+    border: none;
+    height: 2em;
+    padding: 0 1em;
+}
+
+.dropdown button,.dropdown img{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+}
+
+/*----------------------------------------------------- 1st flex ----------------------------------------------*/
+
+.contents{
+    display: flex;
+    box-shadow:black;
+    /* margin:6em 0.1em 6em 4.30em; */
+    padding: 10em 0.66em 6em 4.30em;
+    justify-content: space-between;
+    height: 21em;    
+}
+
+
+.image{
+    display: flex;
+    object-fit: contain;
+    
+}
+
+.image img{
+    border: none;
+    height: 110%;
+    width: 97%;
+    box-shadow: 4px 7px 32px 0 rgba(0,0,0,0.32);
+}
+
+textarea{
+    display: flex;
+    height: 100%;
+    width: 45em;
+    border-radius: 15px;
+    background-color: #e5d8ff;
+    overflow: auto;
+    text-decoration: none;
+    border: none;
+    padding:1rem;
+    font-size: large;
+    box-shadow: inset 3px 5px 25px 0px rgba(0,0,0,0.25);    
+}
+
+textarea:focus{
+    border: none;
+    outline: none;
+}
+
+.social_links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    height: 63em;
+    position: relative;
+}
+
+.sticky{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 5em;
+    gap: 0.3em;
+}
+
+/*---------------------------------------------------- second flex -----------------------------------------*/
+
+.interacted_data{
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 6em 6em 4.30em;
+    list-style-type: none;
+}
+
+.data1,.data2,.data3,.data4{
+    display: flexbox;
+    color: white;
+    width: 10em;
+    padding: 1em 0em 1em 1em;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size:x-large;
+    box-shadow:0px 9px 31px 0px rgba(0,0,0,0.4);
+}
+
+.data1{
+    background-color: #929dff;
+    margin-top: 0.31em;
+}
+
+.data2{
+    background-color: #732cf2;
+}
+
+.data3{
+    background-color: #d288ff;
+}
+
+.data4{
+    background-color: black;
+}
+
+/*------------------------------------- customer support icon ----------------------------------*/
+
+.s_img{
+    height: 8em;
+    width: 8em;
+    border: none;
+    float:right;
+    position: fixed;
+    bottom:1em;
+    right: 4.5em;
+    z-index: 1;
+}
+
+/*--------------------------------------------- third flex ---------------------------------------*/
+
+.user_preference{
+    display: flex;
+    background-color: #483eff;
+    margin: 0em 6em 3em 4.30em;
+    border-radius: 7px;
+    padding: 1em;
+    gap: 5em;
+
+}
+
+.options{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    width: 20em;
+    padding: 2em;
+    padding-left: 4em;
+    justify-content: space-evenly;
+}
+
+.options a:focus{
+    background-color: #bce0f6;
+    color: black;
+    box-shadow: 0px 6px 35px 0px rgba(0,0,0,0.39);
+    border: none;
+}
+
+.options a{
+    display: flex;
+    border: 4px solid white;
+    border-radius: 10px;
+    /* color: white;
+    background-color: #483eff; */
+    text-decoration: none;
+    padding:1em 3em;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+iframe{
+    height:18em;
+    background-color: white;
+    width: 90%;
+    border-radius: 7px;
+    padding: 3em;
+    row-gap: 2em;
+    margin-top: 1em;
+    margin-right: 1em;
+
+}
+
+/*===================================== for temporary ===================================*/
+.options .HS1{
+    display: flex;
+    background-color: #bce0f6;
+    color: black;
+    box-shadow: 0px 6px 35px 0px rgba(0,0,0,0.39);
+    border: none;
+}
+
+.HS{
+    pointer-events: none ;
+    background-color: #483eff;
+}
+/*===================================================================================================*/
+
+/*+++++++++++++++++++++++++++++++++++++++++ forms html customizations +++++++++++++++++++++++++++++++++++++++*/
+.arrow{
+    border: none;
+}
+
+.b_cus{
+    /* display: flex; */
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    /* position: absolute; */
+    position: fixed;
+    right: 0em;
+    bottom: 0em;
+    /* margin-top: 20em; */
+    border: none;
+    border-radius: 7px;
+    padding: 0.5em;
+}
+
+table{
+    border-spacing: 1em;
+}
+
+input{
+    border: 0;
+}
+
+.forms{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color:#04285a;
+}
+
+.forms label,button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.forms .forms_h2{
+    font-family: "Inter";
+    font-weight: 800;
+}
+
+.forms input{
+    color: #143565;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
